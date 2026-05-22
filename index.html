@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>โปรโมชั่น HighScore | รับ Auto Scan ฟรี</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f1f5f9; --bg-white: #ffffff; --text-primary: #0f172a; --text-secondary: #334155;
+      --blue: #2563eb; --orange: #ea580c; --line-green: #06C755;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Noto Sans Thai', sans-serif; background: var(--bg); color: var(--text-primary); padding: 15px; line-height: 1.7; }
+    
+    .container { max-width: 800px; margin: 0 auto; width: 100%; }
+    
+    .promo-card { background: var(--bg-white); padding: 25px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    h1 { color: var(--blue); margin-bottom: 12px; font-size: 1.6rem; }
+    .badge { display: inline-block; background: var(--orange); color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; margin-bottom: 15px; }
+    
+    .feature-box { text-align: left; margin: 20px 0; }
+    .feature-box h3 { color: var(--blue); margin-bottom: 10px; font-size: 1.1rem; }
+    .feature-box ul { list-style: none; }
+    .feature-box li { margin-bottom: 12px; font-size: 14px; color: var(--text-secondary); display: flex; align-items: start; gap: 8px; }
+
+    .card-images { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 25px 0; }
+    .card-images img { width: 100%; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+    .link-box { margin-top: 15px; padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 13px; }
+    .link-box a { color: var(--blue); word-break: break-all; font-weight: 600; }
+
+    .line-btn { display: block; background: var(--line-green); color: white; text-align: center; padding: 15px; border-radius: 50px; font-weight: 700; text-decoration: none; margin-top: 25px; font-size: 1rem; }
+    
+    .footer-note { font-size: 12px; color: #94a3b8; text-align: center; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="promo-card">
+    <div class="badge">Limited Time Offer</div>
+    <h1>ฟรี! ระบบ สแกน Auto 🤖</h1>
+    <p>สิทธิพิเศษสำหรับผู้ใช้งาน HighScore รับสิทธิ์ใช้ระบบ Auto ฟรีถึง<span id="endOfMonthText" style="color:var(--orange); font-weight:bold;"> สิ้นเดือนนี้</span></p>
+
+    <div class="feature-box">
+      <h3>ทำไมต้องระบบ Auto Scan?</h3>
+      <ul>
+        <li>✅ <b>ส่งการ์ด:</b> ทุก 6 นาที เมื่อพบคู่ที่น่าติดตามผล</li>
+        <li>✅ <b>Scan นาทีสำคัญ:</b> เริ่มวิเคราะห์นาทีที่ 22 (ครึ่งแรก) และ 67 (ครึ่งหลัง)</li>
+        <li>✅ <b>วิเคราะห์ความเดือด การแข่งขัน ด้วยสี:</b> แดง/ส้ม/เหลือง (โอกาสเกิดประตูสูง) vs เขียว/เทา (โอกาสเกิดประตูต่ำ)</li>
+        <li>✅ <b>เช็คสถิติได้ทันที:</b> ดูความน่าจะเป็นแต่ละ สีการ์ด [รวม/รายวัน] และกด [สถิติ] ดูข้อมูลคำนวณ ณ ขณะนั้นได้ที่การ์ด</li>
+      </ul>
+      
+      <p style="font-size: 13px; margin-top: 15px; color: var(--blue);">
+        🚀 <i>กำลังพัฒนา: ฟีเจอร์สูงหลัง-ต่ำหลัง และระบบ Bet Auto</i><br>
+        📈 <i>ซีซั่น 2026/2027: ขยายลีกมากขึ้น 2.3 เท่าผ่าน Sportmonks API</i>
+      </p>
+
+      <div class="link-box">
+        เช็ครายชื่อลีกที่รองรับทั้งหมดได้ที่: <a href="https://www.sportmonks.com/football-api/coverage/" target="_blank">https://www.sportmonks.com/football-api/coverage/</a>
+      </div>
+    </div>
+
+    <div class="card-images">
+      <img src="https://i.postimg.cc/8Ch5W52V/RED.jpg" alt="RED">
+      <img src="https://i.postimg.cc/WzfbjJk6/ORANGE.jpg" alt="ORANGE">
+      <img src="https://i.postimg.cc/qMSM5y00/YELLOW.jpg" alt="YELLOW">
+      <img src="https://i.postimg.cc/MG8ZWwvC/GREEN.jpg" alt="GREEN">
+    </div>
+
+    <a href="https://lin.ee/QRvgLmM" target="_blank" class="line-btn">เพิ่มเพื่อนเพื่อรับสิทธิ์เลย!</a>
+  </div>
+  
+  <div class="footer-note">© 2026 HighScore System. All rights reserved.</div>
+</div>
+
+<script>
+  const now = new Date();
+  const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+  const months = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+  document.getElementById('endOfMonthText').textContent = ` ${endOfMonth.getDate()} ${months[endOfMonth.getMonth()]} ${endOfMonth.getFullYear()}`;
+</script>
+
+</body>
+</html>
