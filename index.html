@@ -233,7 +233,7 @@
 
 <script>
   const now = new Date();
-  const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+  const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 2, 0);
   const months = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
   document.getElementById('endOfMonthText').textContent = ` ${endOfMonth.getDate()} ${months[endOfMonth.getMonth()]} ${endOfMonth.getFullYear()}`;
 </script>
